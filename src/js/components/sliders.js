@@ -217,13 +217,14 @@ document.body.style.setProperty('--hero-slider-speed', heroSliderSpeed + 'ms');/
 
 const heroSlider = new Swiper('.hero-slider', {
   slidesPerView: 1,
+  loop: true,
   navigation: {
     nextEl: '.hero__next',
     prevEl: '.hero__prev',
   },
   speed: heroSliderSpeed,
   autoplay: {
-    delay: 1000,
+    delay: 3000,
   },
   pagination: {
     el: '.hero__pag',
